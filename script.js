@@ -5,9 +5,9 @@ let selectedSeats = [];
 
 // Sample movies and theatres data
 const moviesData = [
-  {name: "Spider-Man", poster:"https://via.placeholder.com/200x300"},
-  {name: "Avengers", poster:"https://via.placeholder.com/200x300"},
-  {name: "Inception", poster:"https://via.placeholder.com/200x300"}
+  {name: "Dhurandhar The Revenge", poster:"https://m.media-amazon.com/images/M/MV5BNzdkNjAxNWMtNWY3My00NTI1LTg2YWQtOGI3MDA0NzdhMjEyXkEyXkFqcGc@._V1_.jpg"},
+  {name: "Spider-Man Brand New Day", poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioFLm4hfWkUEO0q_OvuruhEVcWwom1QBaqQ&s"},
+  {name: "Evil Dead Burn ", poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EZx-s9MBql4U3MXstBt9N3prduDB7C2NHg&s"}
 ];
 const theatresData = [
   {name: "PVR Cinemas", shows:["10:00 AM", "1:00 PM", "5:00 PM"]},
