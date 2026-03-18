@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #495057;
+  }
+  
+  /* Card styling */
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  /* Movie card buttons */
+  .btn-primary {
+    border-radius: 50px;
+    transition: 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #0d6efd, #3a8dff);
+    transform: scale(1.05);
+  }
+  
+  /* Seat Grid */
+  #seatGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    gap: 10px;
+    justify-content: center;
+  }
+  .seat {
+    width: 50px;
+    height: 50px;
+    background: #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .seat:hover {
+    transform: scale(1.15);
+  }
+  .seat.selected {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(13,110,253,0.6);
+  }
+  .seat.booked {
+    background: #6c757d;
+    opacity: 0.6;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  /* Confirmation box */
+  #confirm {
+    background: linear-gradient(160deg, #0d6efd 0%, #3a8dff 100%);
+    color: #fff;
+    border-radius: 20px;
+    animation: slideIn 0.7s ease forwards;
+  }
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
