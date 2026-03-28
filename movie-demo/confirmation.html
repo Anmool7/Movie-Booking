@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed | MovieBook Pro</title>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand logo-text" href="index.html">
+            MovieBook
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+
+            <ul class="navbar-nav menu-items">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Confirmation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html">
+                        My Bookings
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="user-actions">
+            <img src="https://i.pravatar.cc/40" class="avatar">
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= CONFIRMATION SECTION ================= -->
+<section class="confirmation-section">
+
+    <div class="container">
+
+        <div class="confirmation-card">
+
+            <!-- Success Icon -->
+            <div class="success-icon">
+                ✔
+            </div>
+
+            <!-- Title -->
+            <h2 class="confirmation-title">
+                Booking Confirmed!
+            </h2>
+
+            <p class="confirmation-text">
+                Your movie ticket has been successfully booked.
+            </p>
+
+
+            <!-- Ticket Card -->
+            <div class="ticket-card">
+
+                <!-- QR -->
+                <div class="qr-box">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=MovieBookTicket123">
+                </div>
+
+                <!-- Ticket Info -->
+                <div class="ticket-info">
+
+                    <h4>Avengers Endgame</h4>
+
+                    <p>PVR Cinemas</p>
+
+                    <p>7:30 PM</p>
+
+                    <p>Seats: B3, B4</p>
+
+                    <p class="booking-id">
+                        Booking ID: MB12345678
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="confirmation-buttons">
+
+                <button class="btn download-btn">
+                    Download Ticket
+                </button>
+
+                <a href="bookings.html" class="btn booking-btn">
+                    My Bookings
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 MovieBook Pro. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

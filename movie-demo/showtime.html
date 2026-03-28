@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showtimes | MovieBook Pro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand logo-text" href="index.html">
+            MovieBook
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+            <ul class="navbar-nav menu-items">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="movies.html">Movies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html">My Bookings</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="user-actions">
+            <img src="https://i.pravatar.cc/40" class="avatar">
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Select Showtime</h1>
+        <p class="page-subtitle">Choose date, theater and show timing</p>
+    </div>
+</section>
+
+<!-- ================= SHOWTIMES SECTION ================= -->
+<section class="showtime-section">
+    <div class="container">
+
+        <!-- Selected Movie Info -->
+        <div class="showtime-movie-info" id="showtimeMovieInfo">
+            <div class="showtime-mini-card">
+                <img id="showtimePoster" src="" alt="Movie Poster">
+                <div>
+                    <h3 id="showtimeTitle">Movie Title</h3>
+                    <p id="showtimeMeta">Runtime • Genre • Language</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date Strip -->
+        <div class="date-strip">
+
+            <div class="date-card active" data-date="2026-03-12">
+                <span>Mon</span>
+                <h4>12</h4>
+            </div>
+
+            <div class="date-card" data-date="2026-03-13">
+                <span>Tue</span>
+                <h4>13</h4>
+            </div>
+
+            <div class="date-card" data-date="2026-03-14">
+                <span>Wed</span>
+                <h4>14</h4>
+            </div>
+
+            <div class="date-card" data-date="2026-03-15">
+                <span>Thu</span>
+                <h4>15</h4>
+            </div>
+
+            <div class="date-card" data-date="2026-03-16">
+                <span>Fri</span>
+                <h4>16</h4>
+            </div>
+
+        </div>
+
+        <!-- Theater List -->
+        <div class="theater-list">
+
+            <div class="theater-card">
+                <h3>PVR Cinemas</h3>
+                <p>City Center Mall</p>
+
+                <div class="time-slots">
+                    <button class="slot" onclick="selectShowtime('PVR Cinemas', '10:00 AM')">10:00</button>
+                    <button class="slot" onclick="selectShowtime('PVR Cinemas', '1:30 PM')">1:30</button>
+                    <button class="slot" onclick="selectShowtime('PVR Cinemas', '4:00 PM')">4:00</button>
+                    <button class="slot" onclick="selectShowtime('PVR Cinemas', '7:30 PM')">7:30</button>
+                </div>
+            </div>
+
+            <div class="theater-card">
+                <h3>INOX Theater</h3>
+                <p>Grand Mall</p>
+
+                <div class="time-slots">
+                    <button class="slot" onclick="selectShowtime('INOX Theater', '11:00 AM')">11:00</button>
+                    <button class="slot" onclick="selectShowtime('INOX Theater', '2:30 PM')">2:30</button>
+                    <button class="slot" onclick="selectShowtime('INOX Theater', '6:00 PM')">6:00</button>
+                    <span class="slot sold">9:30</span>
+                </div>
+            </div>
+
+            <div class="theater-card">
+                <h3>Cinepolis</h3>
+                <p>Downtown Plaza</p>
+
+                <div class="time-slots">
+                    <button class="slot" onclick="selectShowtime('Cinepolis', '9:00 AM')">9:00</button>
+                    <button class="slot" onclick="selectShowtime('Cinepolis', '12:00 PM')">12:00</button>
+                    <button class="slot" onclick="selectShowtime('Cinepolis', '3:30 PM')">3:30</button>
+                    <button class="slot" onclick="selectShowtime('Cinepolis', '8:30 PM')">8:30</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>© 2026 MovieBook Pro. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

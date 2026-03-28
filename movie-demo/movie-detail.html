@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail | MovieBook Pro</title>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand logo-text" href="index.html">
+            MovieBook
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+
+            <ul class="navbar-nav menu-items">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="movies.html">Movies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html">My Bookings</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="user-actions">
+            <img src="https://i.pravatar.cc/40" class="avatar">
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= MOVIE BANNER ================= -->
+<section class="movie-banner">
+
+    <div class="movie-overlay"></div>
+
+    <div class="container banner-content">
+
+        <div class="row align-items-center">
+
+            <!-- Poster -->
+            <div class="col-lg-4">
+
+                <img 
+                src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+                class="detail-poster">
+
+            </div>
+
+            <!-- Info -->
+            <div class="col-lg-8">
+
+                <h1 class="movie-detail-title">
+                    Avengers Endgame
+                </h1>
+
+                <div class="movie-detail-meta">
+
+                    <span>2019</span>
+                    <span>3h 1m</span>
+                    <span class="rating">⭐ 8.4</span>
+
+                </div>
+
+                <p class="movie-detail-desc">
+
+                    After the devastating events of Infinity War, the Avengers assemble once more 
+                    to reverse Thanos' actions and restore balance to the universe in an epic finale.
+
+                </p>
+
+                <div class="detail-buttons">
+    
+                <a href="showtime.html" class="btn primary-btn">Book Now</a>
+                   <button class="secondary-btn">Watch Trailer</button>
+</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TABS SECTION ================= -->
+<section class="tabs-section">
+    <div class="container">
+
+        <div class="tabs">
+            <button class="tab" data-tab="about">About</button>
+            <button class="tab" data-tab="reviews">Reviews</button>
+        </div>
+
+        
+
+        <!-- ABOUT TAB -->
+        <div class="tab-content" id="about">
+            <div class="info-card">
+                <h3>About the Movie</h3>
+                <p>
+                    This movie follows the journey of a powerful character facing emotional,
+                    psychological, and external conflict in a visually rich cinematic world.
+                    The story blends strong drama, suspense, and memorable storytelling with
+                    high production value and emotional depth.
+                </p>
+
+                <p>
+                    It is designed to deliver an engaging theater experience with intense
+                    performances, strong background score, and large-scale visuals. The movie
+                    appeals to audiences who enjoy powerful themes, thrilling moments, and
+                    character-driven storytelling.
+                </p>
+            </div>
+        </div>
+
+        <!-- REVIEWS TAB -->
+        <div class="tab-content" id="reviews">
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <h4>Rahul Sharma</h4>
+                        <span>⭐ 9/10</span>
+                    </div>
+                    <p>
+                        Amazing visuals and strong emotional storytelling. A very engaging movie experience.
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <h4>Priya Verma</h4>
+                        <span>⭐ 8/10</span>
+                    </div>
+                    <p>
+                        Great performances and very stylish direction. The background score was excellent.
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <h4>Aman Singh</h4>
+                        <span>⭐ 8.5/10</span>
+                    </div>
+                    <p>
+                        Good theater watch. Story was interesting and the visuals looked premium on the big screen.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 MovieBook Pro. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

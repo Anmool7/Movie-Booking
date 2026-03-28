@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | MovieBook Pro</title>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand logo-text" href="index.html">
+            MovieBook
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+
+            <ul class="navbar-nav menu-items">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html">My Bookings</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="admin.html">
+                        Admin
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="user-actions">
+            <img src="https://i.pravatar.cc/40" class="avatar">
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+
+    <div class="container">
+
+        <h1 class="page-title">
+            Admin Panel
+        </h1>
+
+        <p class="page-subtitle">
+            Add and manage movies in MovieBook Pro
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADMIN SECTION ================= -->
+<section class="admin-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- ================= ADD MOVIE FORM ================= -->
+            <div class="col-lg-5">
+
+                <div class="admin-card">
+
+                    <h3>Add New Movie</h3>
+
+                    <form id="movieForm">
+
+                        <div class="mb-3">
+                            <label>Movie Title</label>
+                            <input type="text" class="form-control admin-input" placeholder="Enter movie title">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Poster Image URL</label>
+                            <input type="text" class="form-control admin-input" placeholder="Paste image URL">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Genre</label>
+                            <input type="text" class="form-control admin-input" placeholder="Action / Drama">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Rating</label>
+                            <input type="text" class="form-control admin-input" placeholder="8.5">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Show Timings</label>
+                            <input type="text" class="form-control admin-input" placeholder="10:00, 1:30, 4:00, 7:30">
+                        </div>
+
+                        <button class="btn admin-btn">
+                            Add Movie
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MOVIE LIST ================= -->
+            <div class="col-lg-7">
+
+                <div class="admin-card">
+
+                    <h3>Movie List</h3>
+
+                    <div class="admin-movie-list">
+
+                        <!-- Movie Item -->
+                        <div class="admin-movie-item">
+
+                            <img src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg">
+
+                            <div class="admin-movie-info">
+
+                                <h5>Avengers Endgame</h5>
+                                <p>Action • 8.4</p>
+
+                            </div>
+
+                            <div class="admin-actions">
+
+                                <button class="btn edit-btn">
+                                    Edit
+                                </button>
+
+                                <button class="btn delete-btn">
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Movie Item -->
+                        <div class="admin-movie-item">
+
+                            <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+
+                            <div class="admin-movie-info">
+
+                                <h5>Joker</h5>
+                                <p>Drama • 8.5</p>
+
+                            </div>
+
+                            <div class="admin-actions">
+
+                                <button class="btn edit-btn">
+                                    Edit
+                                </button>
+
+                                <button class="btn delete-btn">
+                                    Delete
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 MovieBook Pro. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
