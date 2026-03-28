@@ -2167,3 +2167,582 @@ button.slot:hover {
         padding: 18px;
     }
 }
+
+/* =========================================================
+   RESPONSIVE LAYOUT FIXES
+   Mobile First Improvements
+   ========================================================= */
+
+/* ---------- Large Tablets ---------- */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .filter-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .movie-detail-title {
+        font-size: 34px;
+    }
+
+    .detail-poster {
+        max-width: 260px;
+        height: 390px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary-box {
+        gap: 18px;
+    }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 992px) {
+    .custom-navbar .container {
+        gap: 12px;
+    }
+
+    .menu-items {
+        padding-top: 12px;
+        gap: 4px;
+    }
+
+    .menu-items .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .hero-section {
+        min-height: 380px;
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .movie-card {
+        max-width: 220px;
+        height: 315px;
+    }
+
+    .movie-banner {
+        min-height: auto;
+        padding: 36px 20px;
+    }
+
+    .banner-content .row {
+        row-gap: 24px;
+    }
+
+    .detail-poster {
+        max-width: 240px;
+        height: 360px;
+    }
+
+    .movie-detail-title {
+        font-size: 30px;
+    }
+
+    .movie-detail-desc {
+        font-size: 15px;
+    }
+
+    .showtime-mini-card {
+        align-items: flex-start;
+    }
+
+    .payment-section .row,
+    .admin-section .row {
+        row-gap: 24px;
+    }
+
+    .booking-card img {
+        height: 240px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .page-header,
+    .movie-section,
+    .showtime-section,
+    .seat-section,
+    .payment-section,
+    .booking-section,
+    .admin-section,
+    .confirmation-section,
+    .filter-section,
+    .summary-panel,
+    .tabs-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Navbar */
+    .custom-navbar {
+        min-height: 68px;
+        padding: 10px 0;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .avatar {
+        width: 34px;
+        height: 34px;
+    }
+
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        margin-top: 12px;
+        border-radius: 14px;
+        padding: 12px 16px;
+        border: 1px solid #E5E7EB;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .menu-items {
+        align-items: flex-start;
+    }
+
+    .menu-items .nav-link::after {
+        left: 0;
+        right: auto;
+        width: 40px;
+    }
+
+    /* Hero */
+    .hero-section {
+        min-height: 300px;
+        padding: 0 16px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 28px 0;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 240px;
+        height: 52px;
+    }
+
+    /* Page titles */
+    .page-title {
+        font-size: 28px;
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    /* Filters */
+    .filter-box {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .search-input,
+    .filter-select,
+    .admin-input,
+    .payment-input,
+    .form-control,
+    .form-select {
+        height: 46px;
+    }
+
+    /* Movie cards */
+    .movie-section .row {
+        row-gap: 18px;
+        justify-content: center;
+    }
+
+    .movie-card {
+        max-width: 180px;
+        height: 270px;
+        border-radius: 18px;
+    }
+
+    .movie-card-overlay {
+        padding: 14px 12px 12px;
+    }
+
+    .movie-card-overlay .movie-title {
+        font-size: 13px;
+        line-height: 1.15;
+        -webkit-line-clamp: 2;
+    }
+
+    .movie-genre {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .movie-rating {
+        font-size: 12px;
+    }
+
+    /* Movie detail */
+    .movie-banner {
+        padding: 28px 16px;
+    }
+
+    .banner-content {
+        padding: 24px 0;
+    }
+
+    .detail-poster {
+        max-width: 210px;
+        height: 315px;
+        margin: 0 auto;
+    }
+
+    .movie-detail-title {
+        font-size: 28px;
+        margin-top: 4px;
+    }
+
+    .movie-detail-meta {
+        gap: 10px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .movie-detail-desc {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .detail-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        min-width: 0;
+        height: 52px;
+    }
+
+    /* Tabs */
+    .tabs {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .tab {
+        font-size: 15px;
+        padding: 16px 0 12px;
+    }
+
+    /* Info / reviews */
+    .info-card,
+    .review-card,
+    .theater-card,
+    .payment-form,
+    .order-summary,
+    .admin-card,
+    .booking-card,
+    .confirmation-card {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Showtimes page */
+    .showtime-mini-card {
+        flex-direction: row;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .showtime-mini-card img {
+        width: 58px;
+        height: 82px;
+    }
+
+    .showtime-mini-card h3 {
+        font-size: 16px;
+    }
+
+    .showtime-mini-card p {
+        font-size: 13px;
+    }
+
+    .date-strip {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .date-card {
+        width: 72px;
+        min-width: 72px;
+        height: 88px;
+    }
+
+    .date-card h4 {
+        font-size: 21px;
+    }
+
+    .time-slots {
+        gap: 10px;
+    }
+
+    .slot {
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    /* Seats page */
+    .seat-info-bar {
+        height: auto;
+        padding: 14px 16px;
+    }
+
+    .seat-info-bar .container {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+
+    .screen {
+        width: 88%;
+    }
+
+    .seat-container {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    .seat-row {
+        grid-template-columns: 28px repeat(10, 28px);
+        gap: 10px;
+        min-width: 390px;
+    }
+
+    .seat {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        font-size: 10px;
+    }
+
+    .seat-legend {
+        gap: 16px;
+        justify-content: flex-start;
+    }
+
+    .summary-box {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        border-radius: 18px 18px 0 0;
+        box-shadow: 0 -6px 24px rgba(15, 23, 42, 0.12);
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px 16px calc(18px + env(safe-area-inset-bottom));
+        gap: 14px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        min-width: 0;
+        height: 52px;
+    }
+
+    .seat-section {
+        padding-bottom: 120px;
+    }
+
+    /* Payment page */
+    .payment-tabs {
+        gap: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 24px;
+    }
+
+    .payment-tab {
+        font-size: 15px;
+        padding-bottom: 12px;
+    }
+
+    .payment-input {
+        height: 52px;
+        margin-bottom: 14px;
+    }
+
+    .pay-btn {
+        height: 52px;
+    }
+
+    .movie-summary {
+        align-items: flex-start;
+    }
+
+    .movie-summary img {
+        width: 54px;
+        height: 82px;
+    }
+
+    .price-row.total {
+        font-size: 16px;
+    }
+
+    /* Confirmation page */
+    .confirmation-section {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .confirmation-card {
+        padding: 24px 18px;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 34px;
+    }
+
+    .confirmation-title {
+        font-size: 24px;
+    }
+
+    .confirmation-buttons {
+        flex-direction: column;
+    }
+
+    .download-btn,
+    .booking-btn {
+        width: 100%;
+    }
+
+    /* Booking cards */
+    .booking-card img {
+        height: 220px;
+    }
+
+    .status {
+        top: 12px;
+        right: 12px;
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .ticket-btn {
+        height: 42px;
+    }
+
+    /* Admin */
+    .admin-movie-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-actions {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        gap: 8px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .movie-card {
+        max-width: 160px;
+        height: 245px;
+    }
+
+    .movie-card-overlay .movie-title {
+        font-size: 12px;
+    }
+
+    .movie-genre {
+        font-size: 10px;
+    }
+
+    .movie-rating {
+        font-size: 11px;
+    }
+
+    .detail-poster {
+        max-width: 180px;
+        height: 270px;
+    }
+
+    .movie-detail-title {
+        font-size: 24px;
+    }
+
+    .date-card {
+        width: 68px;
+        min-width: 68px;
+        height: 82px;
+    }
+
+    .slot {
+        width: 46px;
+        height: 46px;
+        font-size: 12px;
+    }
+
+    .seat-row {
+        min-width: 360px;
+    }
+}
